@@ -134,6 +134,17 @@ body {
     width: 100%;
     text-align: center;
 }
+
+.algo {
+    margin-top: 300px;
+    margin-bottom: 300px;
+    text-align: center;
+    color: red;
+    font-size: 4rem;
+    background-color: white;
+    border: #0c121a solid 1px;
+    border-radius: 10px;
+}
 @media (min-width: 425px) {
     .nav-container{
         margin: 0   auto;
