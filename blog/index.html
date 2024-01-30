@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="nav-container">
+        <div class="title-container">
+            <h1>Blog sobre Algebra Booleana</h1>
+        </div>
+        <ul class="info-container">
+            <li>Acerca de</li>
+            <li>Blog</li>
+        </ul>
+    </header>
+    <main class="main-container">
+        <section class="text-container">
+            <p>Bienvenidos a mi blog sobre circuitos combinatorios y álgebra booleana, dos temas fascinantes y útiles para el diseño y análisis de sistemas digitales. <figcaption></figcaption><br> En este blog, aprenderemos los conceptos básicos, las propiedades y las aplicaciones de estas dos ramas de las matemáticas, y veremos cómo se relacionan entre sí. <figcaption></figcaption> <br> También resolveremos ejercicios prácticos, diseñaremos funciones booleanas y circuitos lógicos, y exploraremos algunos ejemplos reales de circuitos combinatorios. <figcaption></figcaption><br>Espero que disfruten de este blog y que les sirva para ampliar sus conocimientos y habilidades en el campo de la electrónica digital. ¡Empecemos!</p>
+        </section>
+        <section class="index-container">
+            <h2>Indice:</h2>
+            <ul class="items-container">
+                <li><a href="#Def">Definición de Algebra Booleana</a></li>
+                <li><a href="#Prop">Las Propiedades del Algebra Booleana.</a></li>
+                <li><a href="">Ejercicios y Funciones Booleanas</a></li>
+                <li><a href="">Diseño de circuitos combinatorios (Definicion y propiedades)</a></li>
+            </ul>
+        </section>
+
+        <article id="Def"class="article-container">
+            <section class="content-title-container">
+                <h2>Definición de Algebra Booleana</h2>
+            </section>
+            <img src="./definicion.png" alt="">
+            <section class="text-container">
+                <p>El álgebra booleana es una rama de las matemáticas que se ocupa de la manipulación de los valores de verdad (es decir, verdadero y falso) mediante las operaciones AND, OR y NOT. <figcaption></figcaption><br> Estas operaciones se representan con los símbolos &, | y ~ respectivamente. <br> El álgebra booleana fue desarrollada por el matemático inglés George Boole en el siglo XIX, y tiene aplicaciones en la informática, la electrónica, la teoría de conjuntos y la lógica. <figcaption></figcaption><br> El álgebra booleana permite simplificar expresiones y funciones lógicas, así como diseñar y analizar circuitos lógicos digitales. Estos circuitos son la base de los dispositivos electrónicos modernos, como las computadoras, los teléfonos móviles y los robots. <figcaption></figcaption><br>El álgebra booleana también se utiliza para modelar problemas de lógica, como los juegos de mesa, los rompecabezas y las pruebas de razonamiento.</p>
+            </section>
+        </article>
+        <article id="Prop"class="article-container">
+            <section class="content-title-container">
+                <h2>Las Propiedades del Algebra Booleana.</h2>
+            </section>
+            <img src="./propiedades.webp" alt="">
+            <section class="text-container">
+                <p>Propiedad conmutativa: indica que el orden de los elementos no afecta al resultado de la suma o el producto booleanos. Por ejemplo, x + y = y + x y x * y = y * x. <figcaption></figcaption><br>
+                    Propiedad asociativa: indica que el agrupamiento de los elementos no afecta al resultado de la suma o el producto booleanos. <figcaption></figcaption><br>Por ejemplo, x + (y + z) = (x + y) + z y x * (y * z) = (x * y) * z.<figcaption></figcaption><br>
+                    Propiedad distributiva: indica que el producto booleano se distribuye sobre la suma booleana, y viceversa. <figcaption></figcaption><br>Por ejemplo, x * (y + z) = x * y + x * z y x + (y * z) = (x + y) * (x + z).<figcaption></figcaption><br>
+                    Propiedad de la inversión: indica que el complemento de un elemento es el valor opuesto al original, y que la suma o el producto de un elemento y su complemento dan como resultado el elemento neutro de la operación. <figcaption></figcaption><br>Por ejemplo, x + x = 1 y x * x = 0.<figcaption></figcaption><br>
+                    Propiedad de la idempotencia: indica que la suma o el producto de un elemento consigo mismo dan como resultado el mismo elemento. <figcaption></figcaption><br>Por ejemplo, x + x = x y x * x = x.<figcaption></figcaption><br>
+                    Propiedad de la maximalidad: indica que la suma de un elemento y el valor verdadero da como resultado el valor verdadero, y que el producto de un elemento y el valor verdadero da como resultado el mismo elemento. <figcaption></figcaption><br>Por ejemplo, x + 1 = 1 y x * 1 = x.<figcaption></figcaption><br>
+                    Propiedad de la minimalidad: indica que la suma de un elemento y el valor falso da como resultado el mismo elemento, y que el producto de un elemento y el valor falso da como resultado el valor falso. <figcaption></figcaption><br>Por ejemplo, x + 0 = x y x * 0 = 0.<figcaption></figcaption><br>
+                    Propiedad de la involución: indica que el complemento del complemento de un elemento es el mismo elemento. <figcaption></figcaption><br>Por ejemplo, (x) = x.<figcaption></figcaption><br>
+                    Propiedad de la absorción: indica que la suma o el producto de un elemento y una expresión que contiene al elemento dan como resultado el mismo elemento. <figcaption></figcaption><br>Por ejemplo, x + (x * y) = x y x * (x + y) = x.<figcaption></figcaption><br>
+                    Leyes de De Morgan: indican que el complemento de la suma o el producto de dos elementos es equivalente al producto o la suma de los complementos de los elementos, respectivamente. <figcaption></figcaption><br>Por ejemplo, (x + y) = x * y y (x * y) = x + y.</p>
+            </section>
+        </article>
+    </main>
+</body>
+</html>
